@@ -44,7 +44,7 @@ namespace BancoXX.classes
                 else
                 {
                     Saldo = Saldo - saque;
-                    Console.WriteLine("Saque realizado!");
+                    Console.WriteLine($"R${saque.ToString("F2")} foram sacados, valor na conta: R${Saldo.ToString("F2")}");
                 }
             }
         }

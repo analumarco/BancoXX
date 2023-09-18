@@ -25,6 +25,7 @@ namespace BancoXX.classes
                 Console.WriteLine($"Você finalizou seu saque!" +
                     $"\nR${valor.ToString("F2")} foram sacados, valor na conta: R${valorFinal.ToString("F2")}.");
                 Saldo = valorFinal;
+
             }
 
         }

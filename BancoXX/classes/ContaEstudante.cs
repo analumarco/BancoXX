@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,7 +23,8 @@ namespace BancoXX.classes
             else
             {
                 Saldo = Saldo - saldo;
-                Console.WriteLine("Saque realizado!");
+                Console.WriteLine($"Você finalizou seu saque!" +
+                    $"\nR${saque.ToString("F2")} foram sacados, valor na conta: R${Saldo.ToString("F2")}.");
             }
         }
 

@@ -15,14 +15,14 @@ namespace BancoXX.classes
 
         public override void Sacar(double saque)
         {
-            double saldo = Saldo + LimiteChequeEspecial;
+            double saldo = saque + LimiteChequeEspecial;
             if(saque > saldo)
             {
                 Console.WriteLine("Saldo insuficiente!");
             }
             else
             {
-                Saldo = Saldo - saldo;
+                Saldo = Saldo - saque;
                 Console.WriteLine($"Você finalizou seu saque!" +
                     $"\nR${saque.ToString("F2")} foram sacados, valor na conta: R${Saldo.ToString("F2")}.");
             }
